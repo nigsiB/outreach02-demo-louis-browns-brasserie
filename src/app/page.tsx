@@ -53,7 +53,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-serif text-3xl text-[var(--gold)]">What we offer</h2>
         </div>
-        <ul className="mt-8 grid gap-0 sm:mx-auto sm:max-w-6xl sm:grid-cols-2 sm:gap-4 sm:px-6">
+        <ul className="mt-8 grid gap-4 sm:mx-auto sm:max-w-6xl sm:grid-cols-2 sm:gap-4 sm:px-6">
           {services.map((s) => (
             <ServiceCard key={s.title} image={s.image} alt={s.alt} title={s.title} desc={s.desc} />
           ))}
