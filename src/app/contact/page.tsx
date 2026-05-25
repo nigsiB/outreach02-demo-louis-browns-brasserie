@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <main className="flex-1">
       <div className="grid min-h-[calc(100svh-4.5rem)] lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
-        <div className="relative min-h-[min(50vw,28rem)] lg:min-h-0 lg:h-full">
+        <div className="relative min-h-[min(50vw,28rem)] w-full lg:min-h-0 lg:h-full">
           <Image
             src={contactHeroImg}
             alt="Brasserie dining room with hospitality atmosphere"

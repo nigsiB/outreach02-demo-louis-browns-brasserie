@@ -49,21 +49,23 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section-services mx-auto max-w-6xl px-6 py-14">
-        <h2 className="font-serif text-3xl text-[var(--gold)]">What we offer</h2>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+      <section className="section-services py-14">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="font-serif text-3xl text-[var(--gold)]">What we offer</h2>
+        </div>
+        <ul className="mt-8 grid gap-0 sm:mx-auto sm:max-w-6xl sm:grid-cols-2 sm:gap-4 sm:px-6">
           {services.map((s) => (
             <ServiceCard key={s.title} image={s.image} alt={s.alt} title={s.title} desc={s.desc} />
           ))}
         </ul>
       </section>
 
-      <section className="section-about mx-auto max-w-6xl px-6 py-14">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden">
-            <Image src={aboutImg} alt="Evening dining" fill className="object-cover" sizes="50vw" />
+      <section className="section-about py-14">
+        <div className="grid items-center gap-10 lg:mx-auto lg:max-w-6xl lg:grid-cols-2 lg:gap-10 lg:px-6">
+          <div className="relative aspect-[4/3] w-full overflow-hidden">
+            <Image src={aboutImg} alt="Evening dining" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
-          <div>
+          <div className="px-6 lg:px-0">
             <h2 className="font-serif text-3xl text-[var(--gold)]">Evening at Louis Brown&apos;s</h2>
             <p className="mt-4 text-sm leading-relaxed opacity-80">
               A neighbourhood brasserie on the High Street — warm lighting, proper plates, and a bar that stays open
