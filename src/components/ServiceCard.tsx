@@ -9,7 +9,7 @@ export function ServiceCard({ image, alt, title, desc }: ServiceCardProps) {
         <Image src={image} alt={alt} fill className="object-cover" sizes="(min-width: 1024px) 28vw, 50vw" />
       </div>
       <div className="p-5">
-        <h3 className="font-serif font-semibold text-[var(--cream)]">{title}</h3>
+        <h3 className="font-semibold text-[var(--cream)]">{title}</h3>
         <p className="mt-2 text-sm leading-relaxed text-[var(--cream)]/75">{desc}</p>
       </div>
     </li>
